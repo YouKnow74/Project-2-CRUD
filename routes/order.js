@@ -4,6 +4,7 @@ const express = require('express');
 const isLoggedIn = require('../config/isLoggendin');
 // initilize router functionality from express framework
 const router=express.Router();
+const isAdmin = require('../config/isAdmin')
 //IMPORTANT
 router.use(express.urlencoded({extended:true}));
 

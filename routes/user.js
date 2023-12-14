@@ -2,7 +2,7 @@
 
 const express = require('express')
 const isLoggedIn = require('../config/isLoggendin');
-
+const isAdmin = require('../config/isAdmin')
 // initilize router functionality from express framework
 const router=express.Router();
 //IMPORTANT
@@ -31,18 +31,18 @@ const userCntrl = require('../controllers/user');
 // create get 
 
 
-router.get("/addU", isLoggedIn, userCntrl.user_create_get);
+router.get("/addU",isAdmin, isLoggedIn, userCntrl.user_create_get);
 
 // create post 
 
-router.post("/addU", isLoggedIn, userCntrl.user_create_post)
+router.post("/addU",isAdmin, isLoggedIn, userCntrl.user_create_post)
 
 
 
 // index get 
 
 
-router.get("/indexU", isLoggedIn, userCntrl.user_index_get)
+router.get("/indexU",isAdmin, isLoggedIn, userCntrl.user_index_get)
 
 
 
@@ -61,7 +61,7 @@ router.get("/editU", isLoggedIn, userCntrl.user_edit_get)
 // delete get 
 
 
-router.get("/deleteU", isLoggedIn, userCntrl.user_delete_get)
+router.get("/deleteU",isAdmin, isLoggedIn, userCntrl.user_delete_get)
 
 
 
