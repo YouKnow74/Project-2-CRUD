@@ -11,7 +11,8 @@ The construction e-commerce “Aqar / Binaa” is a platform for construction sh
 
 The Bahraini market is lacking platform for the construction market. We believe that the platform is a step to move towards digitalizing the sector. 
 
-![Alt text](<public/images/Home-Page1.png>)
+
+<img width="947" alt="home-page1" src="https://github.com/YouKnow74/Project-2-CRUD/assets/79399404/8755de9c-d2ea-4ad8-8c15-2d3c92f00fa2">
 
 
 ## Project Entity Relationship Diagram: 
