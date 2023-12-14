@@ -24,6 +24,7 @@
                 Home
               </a>
             </li>
+            <% if(user){ %>
             <li>
               <a href="/cart/indexC" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
@@ -33,6 +34,7 @@
            
               </a>
             </li>
+            <% } %>
             <% if(user){ %>
             <li>
               <a href="/order/indexO" class="nav-link text-white">
